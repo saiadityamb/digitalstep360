@@ -461,21 +461,107 @@ MobileNumber.on('value', (snapshot) => {
 });
 // ==============================Mobile Number function end======================================================
 
-function Submit_CF(){
-    var Name = document.getElementById("Name").value
-    var Email = document.getElementById("Email").value
-    var Number= document.getElementById("Number").value
-    var Message = document.getElementById("Message").value
+// function Submit_CF(){
+//     var Name = document.getElementById("Name").value
+//     var Email = document.getElementById("Email").value
+//     var Number= document.getElementById("Number").value
+//     var Message = document.getElementById("Message").value
+//     if (Name != '' && Email != '' && Number!='' && Message != '') {
+        
+//         Lead_Form()
+//         document.getElementById("Name").value = ""
+//         document.getElementById("Email").value = ""
+//         document.getElementById("Number").value = ""
+//         document.getElementById("Message").value = ""
+//     }
+//     else{
+//         alert("Fill in all the Details")
+       
+//     }
+// }
+function Submit_CF_1(){
+    var Name = document.getElementById("Name_1").value
+    var Email = document.getElementById("Email_1").value
+    var Number= document.getElementById("Number_1").value
+    var Message = document.getElementById("Message_1").value
     if (Name != '' && Email != '' && Number!='' && Message != '') {
         
-        Lead_Form()
-        document.getElementById("Name").value = ""
-        document.getElementById("Email").value = ""
-        document.getElementById("Number").value = ""
-        document.getElementById("Message").value = ""
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        httpGet(url)
+        document.getElementById("Name_1").value = ""
+        document.getElementById("Email_1").value = ""
+        document.getElementById("Number_1").value = ""
+        document.getElementById("Message_1").value = ""
+        alert("We will contact you shortly.")
     }
     else{
         alert("Fill in all the Details")
        
     }
+}
+function Submit_CF_2(){
+    var Name = document.getElementById("Name_2").value
+    var Email = document.getElementById("Email_2").value
+    var Number= document.getElementById("Number_2").value
+    var Message = document.getElementById("Message_2").value
+    if (Name != '' && Email != '' && Number!='' && Message != '') {
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        httpGet(url)
+        document.getElementById("Name_2").value = ""
+        document.getElementById("Email_2").value = ""
+        document.getElementById("Number_2").value = ""
+        document.getElementById("Message_2").value = ""
+        alert("We will contact you shortly.")
+    }
+    else{
+        alert("Fill in all the Details")
+       
+    }
+}
+function Submit_CF_3(){
+    var Name = document.getElementById("Name_3").value
+    var Email = document.getElementById("Email_3").value
+    var Number= document.getElementById("Number_3").value
+    var Message = document.getElementById("Message_3").value
+    if (Name != '' && Email != '' && Number!='' && Message != '') {
+        
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        httpGet(url)
+        document.getElementById("Name_3").value = ""
+        document.getElementById("Email_3").value = ""
+        document.getElementById("Number_3").value = ""
+        document.getElementById("Message_3").value = ""
+        alert("We will contact you shortly.")
+    }
+    else{
+        alert("Fill in all the Details")
+       
+    }
+}
+function Submit_CF_4(){
+    var Name = document.getElementById("Name_4").value
+    var Email = document.getElementById("Email_4").value
+    var Number= document.getElementById("Number_4").value
+    var Message = document.getElementById("Message_4").value
+    if (Name != '' && Email != '' && Number!='' && Message != '') {
+        
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        httpGet(url)
+        document.getElementById("Name_4").value = ""
+        document.getElementById("Email_4").value = ""
+        document.getElementById("Number_4").value = ""
+        document.getElementById("Message_4").value = ""
+        alert("We will contact you shortly.")
+    }
+    else{
+        alert("Fill in all the Details")
+       
+    }
+}
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
 }
