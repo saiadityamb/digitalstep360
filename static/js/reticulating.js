@@ -486,7 +486,7 @@ function Submit_CF_1(){
     var Message = document.getElementById("Message_1").value
     if (Name != '' && Email != '' && Number!='' && Message != '') {
         
-        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTY0MDYzNzA0MzY1MjZlNTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
         httpGet(url)
         document.getElementById("Name_1").value = ""
         document.getElementById("Email_1").value = ""
@@ -505,7 +505,7 @@ function Submit_CF_2(){
     var Number= document.getElementById("Number_2").value
     var Message = document.getElementById("Message_2").value
     if (Name != '' && Email != '' && Number!='' && Message != '') {
-        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTY0MDYzNzA0MzY1MjZlNTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
         httpGet(url)
         document.getElementById("Name_2").value = ""
         document.getElementById("Email_2").value = ""
@@ -525,7 +525,7 @@ function Submit_CF_3(){
     var Message = document.getElementById("Message_3").value
     if (Name != '' && Email != '' && Number!='' && Message != '') {
         
-        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTY0MDYzNzA0MzY1MjZlNTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
         httpGet(url)
         document.getElementById("Name_3").value = ""
         document.getElementById("Email_3").value = ""
@@ -545,7 +545,7 @@ function Submit_CF_4(){
     var Message = document.getElementById("Message_4").value
     if (Name != '' && Email != '' && Number!='' && Message != '') {
         
-        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTZhMDYzMDA0MzE1MjY4NTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
+        url = `https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjIwNTY0MDYzNzA0MzY1MjZlNTUzMiI_3D_pc?Name=${Name}&Email=${Email}&Mobno=${Number}&Comments=${Message}`
         httpGet(url)
         document.getElementById("Name_4").value = ""
         document.getElementById("Email_4").value = ""
