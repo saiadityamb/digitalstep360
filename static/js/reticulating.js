@@ -359,7 +359,7 @@ function  Submit_Review(){
     }
 }
 function Call_Clicks(){
-    let CallClicks_New = firebase.database().ref("Call_Clicks");
+    let CallClicks_New = firebase.database().ref("Gaurs").child("Call_Clicks");
     CallClicks_New.set({
                amount:window.callclicks+1,   
 });
@@ -367,7 +367,7 @@ function Call_Clicks(){
 // function getresolution() {
 // }
 // ==============================Popup Visibility function start======================================================
-let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
+let formMessage = firebase.database().ref("Gaurs").child("Visibility_Section").child("Popup_Visibility");
 formMessage.on('value', (snapshot) => {
     const data = snapshot.val();
     if (data['display'] == 'true') {
@@ -381,7 +381,7 @@ formMessage.on('value', (snapshot) => {
 });
 // ==============================Popup Visibility function end======================================================
 // ==============================Process_button_type Visibility function start======================================================
-let formMessages = firebase.database().ref("Visibility_Section").child("Process_button_type");
+let formMessages = firebase.database().ref("Gaurs").child("Visibility_Section").child("Process_button_type");
 formMessages.on('value', (snapshot) => {
     const data = snapshot.val();
     window.process_type = data['display'];
@@ -397,7 +397,7 @@ formMessages.on('value', (snapshot) => {
 // });
 // ==============================Tagline Change function end======================================================
 // ==============================Sticky call Button Visibility function start======================================================
-let SticyCallButton = firebase.database().ref("Visibility_Section").child("Sticky-Call-Button");
+let SticyCallButton = firebase.database().ref("Gaurs").child("Visibility_Section").child("Sticky-Call-Button");
 SticyCallButton.on('value', (snapshot) => {
     const data = snapshot.val();
     if (data['display'] == "true") {
@@ -411,7 +411,7 @@ SticyCallButton.on('value', (snapshot) => {
 });
 // ==============================Sticky call Button Visibility function end======================================================
 // ==============================Lead Form (Clickable) Visibility function start======================================================
-let LeadForm_Clickable = firebase.database().ref("Visibility_Section").child("Lead-form_Clickable-form");
+let LeadForm_Clickable = firebase.database().ref("Gaurs").child("Visibility_Section").child("Lead-form_Clickable-form");
 LeadForm_Clickable.on('value', (snapshot) => {
     const data = snapshot.val();
     if (data['display'] == "true") {
@@ -424,14 +424,14 @@ LeadForm_Clickable.on('value', (snapshot) => {
 // ==============================Lead Form (Clickable) Visibility function end======================================================
 
 // ==============================Call Clicks function start======================================================
-let CallClicks = firebase.database().ref("Call_Clicks").child("amount");
+let CallClicks = firebase.database().ref("Gaurs").child("Call_Clicks").child("amount");
 CallClicks.on('value', (snapshot) => {
     const data = snapshot.val();
     window.callclicks = data;
 });
 // ==============================Call Cliacks function end======================================================
 // ==============================Mobile Number function start======================================================
-let MobileNumber = firebase.database().ref("Content_Section").child("Tagline");
+let MobileNumber = firebase.database().ref("Gaurs").child("Content_Section").child("Tagline");
 MobileNumber.on('value', (snapshot) => {
     const data = snapshot.val();
     var num = data['number']
