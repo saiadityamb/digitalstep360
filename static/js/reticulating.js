@@ -55,7 +55,7 @@ function Splash() {
                 window.scrollTo(scrollLeft, scrollTop);
             };
         window.confirmation = true;
-    }, 3000);
+    }, 7000);
 
 }
 function Nothing() {
